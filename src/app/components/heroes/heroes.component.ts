@@ -26,18 +26,4 @@ export class HeroesComponent implements OnInit {
   getHeroe( idx: number) {
     this.router.navigate( ['/heroe', idx] );
   }
-
-  buscarHeroes(termino: string): Heroe[] {
-    const heroesArr: Heroe[] = [];
-    termino = termino.toLocaleLowerCase();
-
-    for (let heroe of this.heroes) {
-      const nombre = heroe.nombre.toLowerCase();
-      if (nombre.indexOf( termino ) >= 0) {
-        heroesArr.push(heroe);
-      }
-    }
-
-    return heroesArr;
-  }
 }

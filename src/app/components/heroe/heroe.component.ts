@@ -4,8 +4,6 @@ import { HeroesService } from '../../services/heroes.service';
 import { Router } from '@angular/router';
 
 
-
-
 @Component({
   selector: 'app-heroe',
   templateUrl: './heroe.component.html'

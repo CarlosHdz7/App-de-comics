@@ -14,16 +14,14 @@ export class SearchComponent implements OnInit {
   termino: string;
 
   constructor( private activatedRoute: ActivatedRoute, private heroesService: HeroesService, private router: Router ) {
+  }
 
+  ngOnInit() {
     this.activatedRoute.params.subscribe( params => {
       this.termino = params['termino'];
       this.heroes = this.heroesService.buscarHeroes( params['termino'] );
       console.log(this.heroes);
     });
-
-  }
-
-  ngOnInit() {
   }
 
   getHeroe( idx: number) {

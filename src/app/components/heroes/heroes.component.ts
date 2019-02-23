@@ -23,7 +23,7 @@ export class HeroesComponent implements OnInit {
     // console.log(this.heroes);
   }
 
-  getHeroe( idx: number) {
-    this.router.navigate( ['/heroe', idx] );
-  }
+  // getHeroe( idx: number) {
+  //   this.router.navigate( ['/heroe', idx] );
+  // }
 }
